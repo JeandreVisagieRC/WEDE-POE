@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Animal Rescue</title>
+</head>
+<body>
+    <header>
+        <h1>Animal Rescue NPO</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="services.html">Services</a> | 
+            <a href="adoptions.html">Adopt</a> | 
+            <a href="enquiry.html">Get Involved</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact & Locations</h1>
+        <p>Please note that adoptions only happen at our Main Shelter.</p>
+
+        <section>
+            <h2>Main Shelter (Adoptions)</h2>
+            <address>
+                124 Rescue Road<br>
+                Durbanville, 7550
+            </address>
+            <p><strong>Hours:</strong> Tue - Sun, 09:00 - 15:00</p>
+            <p><strong>Phone:</strong> 021 555 1234</p>
+        </section>
+
+        <section>
+            <h2>Head Office (No Adoptions)</h2>
+            <address>
+                8 Admin Street<br>
+                Bellville, 7530
+            </address>
+            <p><strong>Hours:</strong> Mon - Fri, 08:00 - 16:00</p>
+            <p><strong>Phone:</strong> 021 555 9876</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Map</h2>
+            <img src="images/map-placeholder.jpg" alt="Map to our shelter" width="400">
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>General Contact Form</h2>
+            <form action="#" method="POST">
+                <label for="contactName">Name:</label><br>
+                <input type="text" id="contactName" name="contactName" required><br><br>
+
+                <label for="contactEmail">Email:</label><br>
+                <input type="email" id="contactEmail" name="contactEmail" required><br><br>
+
+                <label for="subject">Subject:</label><br>
+                <select id="subject" name="subject">
+                    <option value="general">General Question</option>
+                    <option value="events">Events</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <label for="contactMessage">Message:</label><br>
+                <textarea id="contactMessage" name="contactMessage" rows="4" cols="40" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Involved | Animal Rescue</title>
+</head>
+<body>
+    <header>
+        <h1>Animal Rescue NPO</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="services.html">Services</a> | 
+            <a href="adoptions.html">Adopt</a> | 
+            <a href="enquiry.html">Get Involved</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Get Involved</h1>
+        <p>Whether you want to volunteer your time or sponsor a kennel, we need your help.</p>
+
+        <section>
+            <h2>Volunteer Roles</h2>
+            <ul>
+                <li>Dog walking (Weekends)</li>
+                <li>Cat socialization</li>
+                <li>Event fundraising</li>
+            </ul>
+
+            <h2>Sponsorships</h2>
+            <p>Your monthly sponsorship covers food and medical care for one kennel.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Enquiry Form</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" required><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How can you help?</legend>
+                    
+                    <input type="radio" id="vol" name="help_type" value="Volunteer">
+                    <label for="vol">I want to Volunteer</label><br>
+                    
+                    <input type="radio" id="spon" name="help_type" value="Sponsor">
+                    <label for="spon">I want to Sponsor</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                </fieldset>
+                
+                <br>
+                <input type="submit" value="Submit Enquiry">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
