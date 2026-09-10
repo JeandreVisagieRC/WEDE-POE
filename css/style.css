@@ -47,6 +47,7 @@ a:hover, a:focus {
 a:active {
   color: #a04000;
 }
+
 header {
   background-color: var(--primary-color);
   padding: 1rem 5%;
@@ -92,6 +93,54 @@ main {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 2rem 5%;
+  margin-top: 3rem;
+}
+
+footer h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid address {
+  font-style: normal;
+}
+
+.footer-grid strong {
+  display: block;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* tablet breakpoint */
 @media (max-width: 900px) {
   .card-grid {
@@ -116,12 +165,11 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.35rem; }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
