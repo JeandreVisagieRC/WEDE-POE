@@ -1,1 +1,49 @@
-/* Grace Animal Sanctuary stylesheet */
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #e67e22;
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --base-spacing: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+  line-height: 1.2;
+  letter-spacing: 0.05rem;
+  margin-bottom: var(--base-spacing);
+}
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.25rem; }
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+  color: #d35400;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #a04000;
+}
