@@ -3,15 +3,33 @@ Jeandre Visagie
 Overview
 
 Goals
-
+Improve website readability and professional appearance by removing dead links, clearing placeholder text and implementing a working animal gallery.
 Features
+Working animal gallery, contact us features, clean and professional appearance for the new website.
 
-Timeline
+Timeline:
+Part 1: Proposal & HTML Structure
+
+Completion Date: 21 August 2026
+
+Finalized the initial submission requirements, including the two proposals, content sourcing ZIP, 5-page HTML skeleton, navigation menu, and GitHub repository initialization.
+
+Part 2: CSS Styling & Responsive Design
+
+Target Window: 22 August – 25 September 2026
+
+Focuses on design and visual presentation. Initial work covers creating global style rules, setting up typography, and defining color palettes. Mid-month efforts focus on building responsive layouts using CSS Grid and Flexbox to ensure mobile and desktop compatibility. The final weeks cover styling forms, cross-browser debugging, updating code comments, and pushing weekly commits to GitHub.
+
+Part 3: JavaScript Interactivity & Final PoE
+
+Target Window: 26 September – 30 October 2026
+
+Focuses on client-side functionality and submission prep. Early October is dedicated to adding dynamic UI elements and validating input fields on the Enquiry and Contact forms. Late October involves verifying cross-browser script performance, compiling full project references, finalizing the GitHub README file, and submitting the completed portfolio.
 
 Part 1 details:
 Animal photographs on the adoptions page were created using AI image generation software. They do not depict real animals.
 Sitemap
-
+See sitemap.svg
 References:
 Image generation: Google. 2026. Gemini. [Large language model]. [Online].
 Available at: https://gemini.google.com/

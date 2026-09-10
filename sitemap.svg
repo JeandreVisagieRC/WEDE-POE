@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="Arial, Helvetica, sans-serif">
+
+  <rect width="900" height="400" fill="#ffffff"/>
+
+  <text x="450" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a3a2e">Grace Animal Sanctuary — Sitemap</text>
+
+  <!-- Home -->
+  <rect x="360" y="80" width="180" height="56" rx="6" fill="#1a3a2e"/>
+  <text x="450" y="105" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">Home</text>
+  <text x="450" y="123" text-anchor="middle" font-size="11" fill="#a8c5b5">index.html</text>
+
+  <!-- Connectors -->
+  <path d="M450 136 L450 176" stroke="#8aa79a" stroke-width="2" fill="none"/>
+  <path d="M130 176 L770 176" stroke="#8aa79a" stroke-width="2" fill="none"/>
+  <path d="M130 176 L130 216" stroke="#8aa79a" stroke-width="2" fill="none"/>
+  <path d="M290 176 L290 216" stroke="#8aa79a" stroke-width="2" fill="none"/>
+  <path d="M450 176 L450 216" stroke="#8aa79a" stroke-width="2" fill="none"/>
+  <path d="M610 176 L610 216" stroke="#8aa79a" stroke-width="2" fill="none"/>
+  <path d="M770 176 L770 216" stroke="#8aa79a" stroke-width="2" fill="none"/>
+
+  <!-- Pages -->
+  <rect x="60" y="216" width="140" height="56" rx="6" fill="#2f5d4a"/>
+  <text x="130" y="241" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#ffffff">About Us</text>
+  <text x="130" y="259" text-anchor="middle" font-size="10.5" fill="#b7d3c5">about.html</text>
+
+  <rect x="220" y="216" width="140" height="56" rx="6" fill="#2f5d4a"/>
+  <text x="290" y="241" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#ffffff">Services</text>
+  <text x="290" y="259" text-anchor="middle" font-size="10.5" fill="#b7d3c5">services.html</text>
+
+  <rect x="380" y="216" width="140" height="56" rx="6" fill="#b4531f"/>
+  <text x="450" y="241" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#ffffff">Adoptions</text>
+  <text x="450" y="259" text-anchor="middle" font-size="10.5" fill="#f2d3c0">adoptions.html</text>
+
+  <rect x="540" y="216" width="140" height="56" rx="6" fill="#2f5d4a"/>
+  <text x="610" y="241" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#ffffff">Enquiry</text>
+  <text x="610" y="259" text-anchor="middle" font-size="10.5" fill="#b7d3c5">enquiry.html</text>
+
+  <rect x="700" y="216" width="140" height="56" rx="6" fill="#2f5d4a"/>
+  <text x="770" y="241" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#ffffff">Contact</text>
+  <text x="770" y="259" text-anchor="middle" font-size="10.5" fill="#b7d3c5">contact.html</text>
+
+  <!-- Legend -->
+  <rect x="290" y="320" width="14" height="14" rx="3" fill="#2f5d4a"/>
+  <text x="312" y="332" font-size="12" fill="#4b5a53">Required page</text>
+
+  <rect x="440" y="320" width="14" height="14" rx="3" fill="#b4531f"/>
+  <text x="462" y="332" font-size="12" fill="#4b5a53">Additional page</text>
+
+  <text x="450" y="365" text-anchor="middle" font-size="11.5" fill="#7d8a83">6 pages · all linked from the main navigation</text>
+
+</svg>
