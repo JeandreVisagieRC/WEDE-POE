@@ -20,6 +20,20 @@ Target Window: 22 August – 25 September 2026
 
 Focuses on design and visual presentation. Initial work covers creating global style rules, setting up typography, and defining color palettes. Mid-month efforts focus on building responsive layouts using CSS Grid and Flexbox to ensure mobile and desktop compatibility. The final weeks cover styling forms, cross-browser debugging, updating code comments, and pushing weekly commits to GitHub.
 
+Part 2 notes:
+# Animal Welfare Shelter - Part 2
+
+## Changelog
+### Part 1 Feedback Revisions
+- Corrected semantic structure in `about.html` 
+- Added missing `alt` attributes on animal photo thumbnails in `adoptions.html`.
+
+### Part 2 Updates
+- Created external `styles.css` with CSS custom variables and flexbox/grid layouts.
+- Implemented media queries at 900px and 600px breakpoints.
+- Added responsive `<picture>` elements for image resolution handling.
+
+
 Part 3: JavaScript Interactivity & Final PoE
 
 Target Window: 26 September – 30 October 2026
