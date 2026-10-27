@@ -172,4 +172,54 @@ img {
 
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.35rem; }
+  /* Header site name (replaces the header <h1>) + wrapping nav on small screens */
+.site-name a { color: #ffffff; font-size: 1.5rem; font-weight: 700; text-decoration: none; }
+nav ul { flex-wrap: wrap; }
+
+/* scroll animation */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* accordion (services) */
+.accordion-header {
+  width: 100%; text-align: left; padding: 1rem; font: inherit; font-weight: 600;
+  background: var(--card-bg); border: 1px solid #ddd; border-radius: 6px; cursor: pointer;
+  color: var(--primary-color); transition: background-color 0.3s ease;
 }
+.accordion-header:hover { background-color: #fdf2e9; }
+.accordion-header::after { content: "+"; float: right; transition: transform 0.3s ease; }
+.accordion-header.open::after { transform: rotate(45deg); }
+.accordion-panel { display: none; padding: 0.5rem 1rem 1rem; }
+
+/* gallery cards + controls */
+.gallery-controls { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+.card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; cursor: zoom-in; margin-bottom: 0.75rem; transition: transform 0.3s ease; }
+.card img:hover { transform: scale(1.03); }
+
+/* lightbox */
+.lightbox {
+  position: fixed; inset: 0; background: rgba(0, 0, 0, 0.85);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; z-index: 1000;
+}
+.lightbox.open { opacity: 1; visibility: visible; }
+.lightbox img { max-width: 90vw; max-height: 80vh; border-radius: 6px; }
+.lightbox-caption { color: #ffffff; margin-top: 0.75rem; text-align: center; padding: 0 1rem; }
+.lightbox-close { position: absolute; top: 1rem; right: 1.5rem; font-size: 2.5rem; color: #ffffff; background: none; border: none; cursor: pointer; }
+
+/* map */
+#map { height: 400px; border-radius: 8px; }
+
+/* forms */
+form label { display: block; font-weight: 600; margin-top: 0.75rem; }
+form input, form select, form textarea { width: 100%; max-width: 500px; padding: 0.5rem; font: inherit; border: 1px solid #ccc; border-radius: 4px; }
+form input[type="submit"] { width: auto; margin-top: 1rem; background: var(--accent-color); color: #ffffff; border: none; cursor: pointer; padding: 0.6rem 1.5rem; }
+form .invalid { border-color: #c0392b; }
+.error { display: block; color: #c0392b; font-size: 0.875rem; min-height: 1.2em; }
+.form-result { margin-top: 1rem; font-weight: 600; color: var(--primary-color); }
+
+/* allow animations to be disabled */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .lightbox, .card img, .accordion-header::after { transition: none; }
+  .reveal { opacity: 1; transform: none; }
+}}
