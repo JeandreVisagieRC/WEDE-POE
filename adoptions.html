@@ -12,7 +12,7 @@
     <header>
         <p>Grace Animal Sanctuary</p>
 
-        <!-- Main navigation -->
+        <!-- main navigation -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -71,104 +71,31 @@
         <section>
             <h2>Our Animals</h2>
 
-            <!-- Gallery of animals available -->
+            <div class="gallery-controls">
+                <label for="animal-search">Search by name or breed
+                    <input type="search" id="animal-search" placeholder="e.g. Beagle">
+                </label>
 
-            <article id="pippa">
-                <h3>Pippa</h3>
-                <picture>
-                    <source media="(min-width: 600px)" srcset="images/pippa.png">
-                    <img src="images/pippa.png" alt="Pippa, a black and white Border Collie cross standing on grass" width="300">
-                </picture>
-                <ul>
-                    <li><strong>Breed:</strong> Border Collie cross</li>
-                    <li><strong>Age:</strong> 2 years</li>
-                    <li><strong>Size:</strong> Medium</li>
-                    <li><strong>Fee:</strong> R950</li>
-                </ul>
-                <p>Pippa is quick, curious and needs a job to do. She is best suited to an
-                    active household with a secure garden.</p>
-            </article>
+                <label for="size-filter">Size
+                    <select id="size-filter">
+                        <option value="all">All sizes</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </label>
 
-            <article id="bandit">
-                <h3>Bandit</h3>
-                <picture>
-                    <source media="(min-width: 600px)" srcset="images/bandit.png">
-                    <img src="images/bandit.png" alt="Bandit, a tricolour Beagle sitting in woodland" width="300">
-                </picture>
-                <ul>
-                    <li><strong>Breed:</strong> Beagle</li>
-                    <li><strong>Age:</strong> 4 years</li>
-                    <li><strong>Size:</strong> Medium</li>
-                    <li><strong>Fee:</strong> R950</li>
-                </ul>
-                <p>Bandit is sociable and gets on with everyone he meets. He follows his nose
-                    everywhere, so a properly secured garden is essential.</p>
-            </article>
+                <label for="sort-by">Sort by
+                    <select id="sort-by">
+                        <option value="name">Name (A–Z)</option>
+                        <option value="age">Age (youngest first)</option>
+                        <option value="fee">Fee (lowest first)</option>
+                    </select>
+                </label>
+            </div>
 
-            <article id="tumi">
-                <h3>Tumi</h3>
-                <picture>
-                    <source media="(min-width: 600px)" srcset="images/tumi.png">
-                    <img src="images/tumi.png" alt="Tumi, a young tan African village dog sitting outdoors" width="300">
-                </picture>
-                <ul>
-                    <li><strong>Breed:</strong> African village dog</li>
-                    <li><strong>Age:</strong> 8 months</li>
-                    <li><strong>Size:</strong> Medium</li>
-                    <li><strong>Fee:</strong> R950</li>
-                </ul>
-                <p>Tumi was raised in foster care alongside children and cats. He is
-                    house-trained and knows sit, down and wait.</p>
-            </article>
-
-            <article id="skattie">
-                <h3>Skattie</h3>
-                <picture>
-                    <source media="(min-width: 600px)" srcset="images/skattie.png">
-                    <img src="images/skattie.png" alt="Skattie, a white and brown Jack Russell cross standing in a field" width="300">
-                </picture>
-                <ul>
-                    <li><strong>Breed:</strong> Jack Russell cross</li>
-                    <li><strong>Age:</strong> 5 years</li>
-                    <li><strong>Size:</strong> Small</li>
-                    <li><strong>Fee:</strong> R950</li>
-                </ul>
-                <p>Skattie is blind in one eye and it has never slowed her down. She should be
-                    approached from her sighted side and suits a home without very small children.</p>
-            </article>
-
-            <article id="kaya">
-                <h3>Kaya</h3>
-                <picture>
-                    <source media="(min-width: 600px)" srcset="images/kaya.png">
-                    <img src="images/kaya.png" alt="Kaya, a large fawn Boerboel cross sitting outdoors" width="300">
-                </picture>
-                <ul>
-                    <li><strong>Breed:</strong> Boerboel cross</li>
-                    <li><strong>Age:</strong> 1 year</li>
-                    <li><strong>Size:</strong> Large</li>
-                    <li><strong>Fee:</strong> R950</li>
-                </ul>
-                <p>Kaya is a good-natured young dog who has had almost no training and will
-                    grow to around 45kg. She needs an experienced owner, not a first-time one.</p>
-            </article>
-
-            <article id="bella">
-                <h3>Bella</h3>
-                <picture>
-                    <source media="(min-width: 600px)" srcset="images/bella.png">
-                    <img src="images/bella.png" alt="Bella, a brindle Staffordshire Bull Terrier cross lying in a garden" width="300">
-                </picture>
-                <ul>
-                    <li><strong>Breed:</strong> Staffordshire Bull Terrier cross</li>
-                    <li><strong>Age:</strong> 7 years</li>
-                    <li><strong>Size:</strong> Medium</li>
-                    <li><strong>Fee:</strong> R450</li>
-                </ul>
-                <p>Bella is affectionate and completely reliable with people. She does not
-                    tolerate other dogs and needs to be the only animal in the home.</p>
-            </article>
-
+            <!-- Animal cards are created by js/script.js -->
+            <div id="animal-list" class="card-grid"></div>
         </section>
     </main>
 
