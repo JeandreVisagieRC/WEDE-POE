@@ -261,14 +261,14 @@ if (enquiryForm) {
             })
             .catch(function () {
                 resultBox.textContent = response +
-                    ' (We could not send your enquiry right now – please email info@graceanimalsanctuary.org.)';
+                    ' (We could not send your enquiry right now – please email infoTestFakeMail@graceanimalsanctuary.org.)';
             });
     });
 }
 
 
 /* ---------- 8. Contact form: validate, then build an email ---------- */
-const CONTACT_RECIPIENT = 'info@graceanimalsanctuary.org';
+const CONTACT_RECIPIENT = 'infoTestFakeMail@graceanimalsanctuary.org';
 
 const contactForm = document.getElementById('contact-form');
 
