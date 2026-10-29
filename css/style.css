@@ -172,6 +172,7 @@ img {
 
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.35rem; }
+}
   /* Header site name (replaces the header <h1>) + wrapping nav on small screens */
 .site-name a { color: #ffffff; font-size: 1.5rem; font-weight: 700; text-decoration: none; }
 nav ul { flex-wrap: wrap; }
@@ -222,4 +223,4 @@ form .invalid { border-color: #c0392b; }
 @media (prefers-reduced-motion: reduce) {
   .reveal, .lightbox, .card img, .accordion-header::after { transition: none; }
   .reveal { opacity: 1; transform: none; }
-}}
+}
