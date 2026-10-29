@@ -224,3 +224,7 @@ form .invalid { border-color: #c0392b; }
   .reveal, .lightbox, .card img, .accordion-header::after { transition: none; }
   .reveal { opacity: 1; transform: none; }
 }
+
+main section { margin-bottom: 2rem; }
+main p, main ul, main ol, main table { margin-bottom: 1rem; }
+main ul, main ol { padding-left: 1.5rem; }
