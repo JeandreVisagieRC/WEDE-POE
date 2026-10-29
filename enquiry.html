@@ -52,38 +52,53 @@
 
         <hr>
 
-        <section>
+       <section>
             <h2>Enquiry Form</h2>
-            <form action="#" method="POST">
-                <fieldset>
-                    <legend>Personal Details</legend>
+            <form id="enquiry-form" name="enquiry" action="/" method="POST" data-netlify="true" novalidate>
 
-                    <label for="fname">First Name:</label><br>
-                    <input type="text" id="fname" name="fname" required><br><br>
+                <label for="fname">Full name</label>
+                <input type="text" id="fname" name="fname" required minlength="2" maxlength="50">
+                <span class="error" id="fname-error"></span>
 
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-                </fieldset>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required maxlength="100">
+                <span class="error" id="email-error"></span>
 
-                <fieldset>
-                    <legend>How can you help?</legend>
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" required pattern="0[0-9]{9}"
+                       title="Enter a 10-digit number starting with 0, no spaces (e.g. 0821234567).">
+                <span class="error" id="phone-error"></span>
 
-                    <input type="radio" id="vol" name="help_type" value="Volunteer">
-                    <label for="vol">I want to Volunteer</label><br>
+                <label for="interest">How would you like to help?</label>
+                <select id="interest" name="interest" required>
+                    <option value="">-- Please choose --</option>
+                    <option value="walking">Volunteer: dog walking (weekends)</option>
+                    <option value="cats">Volunteer: cat socialisation</option>
+                    <option value="events">Volunteer: event fundraising</option>
+                    <option value="sponsor">Sponsor a kennel</option>
+                </select>
+                <span class="error" id="interest-error"></span>
 
-                    <input type="radio" id="spon" name="help_type" value="Sponsor">
-                    <label for="spon">I want to Sponsor</label><br>
-                </fieldset>
+                <label for="startDate">Preferred start date</label>
+                <input type="date" id="startDate" name="startDate" required
+                       title="Please choose today or a later date.">
+                <span class="error" id="startDate-error"></span>
 
-                <fieldset>
-                    <legend>Your Message</legend>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="40"></textarea>
-                </fieldset>
+                <div id="months-group" hidden>
+                    <label for="months">Sponsorship length (months)</label>
+                    <input type="number" id="months" name="months" min="1" max="12" value="1" required disabled
+                           title="Choose between 1 and 12 months.">
+                    <span class="error" id="months-error"></span>
+                </div>
 
-                <br>
+                <label for="message">Anything else? (optional)</label>
+                <textarea id="message" name="message" rows="4" maxlength="500"></textarea>
+                <span class="error" id="message-error"></span>
+
                 <input type="submit" value="Submit Enquiry">
             </form>
+
+            <div id="enquiry-result" class="form-result" aria-live="polite"></div>
         </section>
     </main>
     <footer>
