@@ -29,7 +29,7 @@ Part 2 notes:
 - Added missing `alt` attributes on animal photo thumbnails in `adoptions.html`.
 
 ### Part 2 Updates
-- Created external `styles.css` with CSS custom variables and flexbox/grid layouts.
+- Created external `style.css` with CSS custom variables and flexbox/grid layouts.
 - Implemented media queries at 900px and 600px breakpoints.
 - Added responsive `<picture>` elements for image resolution handling.
 
