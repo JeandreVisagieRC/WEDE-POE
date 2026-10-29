@@ -73,25 +73,40 @@
 
         <section>
             <h2>General Contact Form</h2>
-            <form action="#" method="POST">
-                <label for="contactName">Name:</label><br>
-                <input type="text" id="contactName" name="contactName" required><br><br>
+            <form id="contact-form" action="mailto:infoTestFakeMail@graceanimalsanctuary.org" method="POST" enctype="text/plain" novalidate>
 
-                <label for="contactEmail">Email:</label><br>
-                <input type="email" id="contactEmail" name="contactEmail" required><br><br>
+                <label for="contactName">Full name</label>
+                <input type="text" id="contactName" name="contactName" required minlength="2" maxlength="50">
+                <span class="error" id="contactName-error"></span>
 
-                <label for="subject">Subject:</label><br>
-                <select id="subject" name="subject">
-                    <option value="general">General Question</option>
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" name="contactEmail" required maxlength="100">
+                <span class="error" id="contactEmail-error"></span>
+
+                <label for="contactPhone">Phone number</label>
+                <input type="tel" id="contactPhone" name="contactPhone" required pattern="0[0-9]{9}"
+                       title="Enter a 10-digit number starting with 0, no spaces (e.g. 0821234567).">
+                <span class="error" id="contactPhone-error"></span>
+
+                <label for="messageType">Type of message</label>
+                <select id="messageType" name="messageType" required>
+                    <option value="">-- Please choose --</option>
+                    <option value="general">General question</option>
+                    <option value="adoption">Adoption question</option>
+                    <option value="donation">Donations</option>
                     <option value="events">Events</option>
-                    <option value="other">Other</option>
-                </select><br><br>
+                    <option value="feedback">Feedback or complaint</option>
+                </select>
+                <span class="error" id="messageType-error"></span>
 
-                <label for="contactMessage">Message:</label><br>
-                <textarea id="contactMessage" name="contactMessage" rows="4" cols="40" required></textarea><br><br>
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" name="contactMessage" rows="6" required minlength="10" maxlength="1000"></textarea>
+                <span class="error" id="contactMessage-error"></span>
 
                 <input type="submit" value="Send Message">
             </form>
+
+            <div id="contact-result" class="form-result" aria-live="polite"></div>
         </section>
     </main>
     <footer>
