@@ -39,6 +39,7 @@ Part 3: JavaScript Interactivity & Final PoE
 Target Window: 26 September – 30 October 2026
 
 Focuses on client-side functionality and submission prep. Early October is dedicated to adding dynamic UI elements and validating input fields on the Enquiry and Contact forms. Late October involves verifying cross-browser script performance, compiling full project references, finalizing the GitHub README file, and submitting the completed portfolio.
+Keyword research. Keywords were chosen using Google Trends (South Africa, past 5 years, checked 29 October 2026). Comparing candidate terms showed "animal rescue" had the highest relative interest (average 56), followed by "animal shelter" (37), "dogs for adoption" (11), "dog adoption" (7) and "adopt a dog" (3). Related-query data showed users often add a location ("animal rescue cape town", "dogs for adoption cape town") or "near me", so location terms were added to page titles, headings and descriptions, and local SEO was supported with the shelter's address and structured data. 
 
 Part 1 details:
 Animal photographs on the adoptions page were created using AI image generation software. They do not depict real animals.
