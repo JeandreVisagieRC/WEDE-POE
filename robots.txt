@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /images/issues/
+Sitemap: https://grace-animal-sanctuary-st10506626.netlify.app/sitemap.xml
